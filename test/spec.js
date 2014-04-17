@@ -11,7 +11,7 @@ describe("get '/'", function() {
   })
 })
 
-describe("get '/users/:id", function() {
+describe("get '/users/:id'", function() {
   it('should exist', function(done) {
     request(app)
       .get('/users/1')
