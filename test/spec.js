@@ -18,3 +18,11 @@ describe("get '/users/:id", function() {
       .expect(200, done)
   })
 })
+
+describe("get '/parties/:id'", function() {
+  it('should exist', function(done) {
+    request(app)
+      .get('/parties/1')
+      .expect(200, done)
+  })
+})
